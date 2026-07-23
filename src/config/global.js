@@ -1,8 +1,9 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.svg',
+    Name: 'Estructuras de control condicionales e iterativas en Python',
+    Description:
+      'El componente desarrolla las estructuras de control del lenguaje Python: condicionales (if, elif, else), operadores relacionales, lógicos, de inclusión y de asignación, e iterativas (while, for) junto con los operadores de rango para construir bucles.',
+    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
       {

@@ -3,13 +3,13 @@
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
+    top: 75%
     left: -10%
     width: 20%
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
     position: absolute
-    top: 30%
+    top: 10%
     right: 10%
     width: 20%
 
@@ -26,11 +26,10 @@
   width: 58.33333333% !important
 .banner-principal__img 
   padding-bottom: 0 !important;
-.banner-principal__row .banner-principal__img 
-    width: 33%;
+
     
 .banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $white !important  
+  color: $black !important  
 
 .boton *, .boton--sm *,
 .barra-avance__boton--regresar span
@@ -40,7 +39,7 @@
 .banner-interno__titulo h5, .banner-interno__titulo h6
   color: $color-sistema-texto !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: $white !important
+  color: $black !important
 figcaption 
     font-weight: normal !important
 
@@ -102,5 +101,359 @@ figcaption
   .mb-cus
     margin-bottom: 2em  !important
 
-  
+//Estilos generales para el curso
+
+//-----------------Estilo para listas-----------------//
+
+// RESET del UL
+.lista-ul--color
+  list-style: none
+  padding: 0
+  margin: 0
+
+// UL - Elementos de la lista
+.lista-ul--color li
+  display: flex !important
+  align-items: flex-start !important
+  margin-bottom: 8px
+  width: 100%
+
+// Viñeta
+.lista-ul__vineta
+  margin-right: 12px !important
+  flex-shrink: 0 !important
+  margin-top: 2px !important
+  color: black
+  min-width: 8px
+
+// Párrafo
+.lista-ul--color li p
+  margin: 0 !important
+  flex: 1
+  padding: 0
+
+// OL - LISTA ORDENADA (para referencia)
+.lista-ol--cuadro
+  list-style: none
+  padding: 0
+
+.lista-ol--cuadro li
+  display: flex
+  align-items: flex-start
+  margin-bottom: 8px
+
+.lista-ol--cuadro__vineta
+  margin-right: 12px
+  flex-shrink: 0
+  min-width: 32px
+  background-color: #FFA500
+  color: white
+  padding: 4px 8px
+  text-align: center
+  font-weight: bold
+
+.lista-ol--cuadro li p
+  margin: 0
+  flex: 1
+
+.lista-ul--color li > i:first-of-type 
+    color: #000000
+
+// Icono para listas----------------------------------------
+.icono-img
+  position: relative
+  width: 10px
+  height: 9px
+  flex-shrink: 0
+  margin-right: 10px
+  margin-top: 6px
+
+.icono-img::before 
+  content: ''
+  position: absolute
+  //background-image: url('../assets/curso/temas/icon.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  width: 15px
+  height: 14px
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+
+
+//estilos que siempre deben ir///import css-variables from 
+
+/// TITULOS TERCER NIVEL
+.titulo-tercer-nivel
+  width: fit-content
+  max-width: 100%
+  position: relative
+  display: inline-flex
+  align-items: center
+  background-color: #FE9841
+  border-radius: 30px
+  padding-right: 16px
+  padding-left: 52px
+  min-height: 48px
  
+  @media screen and (max-width: $bp-min-md)
+    padding-left: 0px
+
+
+  &__icon
+    position: absolute
+    left: -10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 65px
+    max-width: 65px
+    height: auto
+
+    @media screen and (max-width: $bp-min-md)
+      display: none
+
+  &__text
+    margin: 0
+    margin: 0 15px 0 15px
+    white-space: normal
+    word-break: break-word
+
+
+
+///// hasta aca estilos de listas ////////
+
+//en este bloque van todos los background del componente//
+
+.bg
+  &-1
+    background-color: #E2FFFD
+  &-2
+    background-color: #FFDE74
+  &-3
+    background-color: #E6FFD8
+  &-4
+    background-color: #FFE2C0
+  &-5
+    background-color: #87FCE8
+  &-6
+    background-color: #E6E9FB
+  &-7
+    background-image: url(../assets/curso/temas/bg/1.png)
+    background-repeat: no-repeat
+    background-size: cover
+    margin-inline: -3.2rem !important
+  &-8
+    background-color: #ffffff
+  &-r8
+    border-radius: 8px
+  &-9
+    background-image: url(../assets/curso/temas/bg/2.png)
+    background-repeat: no-repeat
+
+    @media (max-width: 768px) 
+      background-image: none
+      background-color: #FEC72F
+  &-10
+    background-color: #604900
+
+  &-11
+    background-color: #FFF9E2
+
+  &-12
+    background-color: #E6E9FB
+  &-12:hover
+    background-color: #E6FFD8
+  &-13
+    background-image: url(../assets/curso/temas/bg/3.png)
+    background-repeat: no-repeat
+    background-size: cover
+    margin-inline: -3.2rem !important
+  &-14
+    background-color: #E6E9FB
+
+//en este bloque van todas los cajones del componente //
+
+.color1
+  background-color: #EBFFE0
+
+.color1:before
+  background-color: #CEFFB3
+
+.color2
+  background-color: #FFF9E2
+
+.color2:before
+  background-color: #FFDE74
+
+
+  ///// SLyder A tipo B Custom --------------------------------------
+.slyder-a__tipo-b
+  &__tipo-b
+    h4, p
+      color: white !important
+
+.slyder-a__tipo-b .slyder-a__btn--atrs
+  background-color: #122CD4
+  @media screen and (max-width: $bp-max-lg)
+    width: 30px
+    height: 30px
+
+.slyder-a__tipo-b .slyder-a__btn--sigt
+  background-color: #122CD4
+  @media screen and (max-width: $bp-max-lg)
+    width: 30px
+    height: 30px
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs  
+  border: none
+
+.slyder-a__bullets__item--active
+  background-color:#122CD4 !important
+  border: none
+
+.slyder-a__bullets__item
+  background-color: #FFDE74
+
+//-------------------////--------//
+
+.audio.color-acento-contenido .audio__btn, .tarjeta-audio.color-acento-contenido .audio__btn, .tarjeta-dialogo.color-acento-contenido .audio__btn 
+    background-color: #604900
+
+.tarjeta-audio.color-acento-contenido .tarjeta-audio__texto
+    color: #604900
+
+
+// tarjeta de codigo // 
+
+.tarjeta-codigo
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+  padding-top: 3rem
+  &:before
+    position: absolute
+    content: ''
+    height: 55px
+    background-color: #3a1d71
+    width: 100%
+    top: 0
+    left: 0
+  &:after
+    position: absolute
+    content: url('../assets/curso/temas/bg/botones.svg')
+    top: 0
+    left: 0
+    transform: translate(20px, 20px)
+
+
+// slider F boton ///import css-variables from 
+
+.slyder-f__btn i 
+  color: #2D5897
+
+.tarjeta-numerada.color-1
+    border-color: #87FCE8
+
+.tarjeta-numerada.color-1 .tarjeta-numerada__numero 
+    background-color: #87FCE8
+
+
+// slider pasos ///import css-variables from
+
+.linea-tiempo-c__header__btn, .linea-tiempo-c__header__btn--left, .linea-tiempo-c__header__btn--right, .pasos-b__header__btn--left, .pasos-b__header__btn--right
+  background-color: #122CD4 !important
+  border: none
+
+.pasos-b__header__item--before .pasos-b__header__item__dot
+  border-color: #C0FEA6
+  background-color: #C0FEA6
+  i
+    color: black !important
+
+.pasos-b.color-acento-contenido .pasos-b__header__item--active .pasos-b__header__item__dot span
+  color: #ffffff
+
+
+.linea-tiempo-d.color-primario .linea-tiempo-d__item--selected .linea-tiempo-d__item__number 
+    background-color: #122CD4
+    color: #f6f9fc
+
+.tarjeta--gris 
+    background-color: #E6FFD8
+
+///// Linea tiempo D --------------------------------------
+.linea-tiempo-d
+  &.color-primario
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: $color-acento-botones
+        color: textColor($color-acento-botones)
+      .linea-tiempo-d__item__content
+        background-color: #E6FFD8 !important
+        color: textColor($color-acento-contenido)
+    .linea-tiempo-d__item__number
+       background-color: $color-acento-botones
+       color: textColor($color-acento-botones)
+    .linea-tiempo-d__item__content
+      background-color: #E6E9FB
+      color: textColor($color-acento-contenido)
+
+.linea-tiempo-d.color-primario .linea-tiempo-d__item__number 
+    background-color: #E6E9FB
+
+// acordeon cruz ///import css-variables from 
+
+  ///// Custom acordeon A tipo A -------------------------------------- 
+.tarjeta.acordeonA
+  background-color: #E6FFD8
+
+.acordion__accion__btn--a
+  background-color: #122CD4 !important
+
+.acordion__activo
+  background-color: #E6FFD8 !important
+  color: black !important
+  h3
+    color: black !important
+  
+.acordion__titulo
+  h3
+    color: black 
+
+.acordion__accion__btn--a i, .acordion__accion__btn--b i 
+    color: white !important
+
+.slyder__btn 
+  background-color: #122CD4
+
+.slyder__btn i 
+    color: white !important
+
+.acordion__accion__btn--b 
+    background-color: #122CD4 !important
+
+
+  
+//-icono lista --///import css-variables from 
+
+//-------- Icono Imagen ----------///
+
+.icono-img
+  position: relative
+  width: 10px
+  height: 9px
+  flex-shrink: 0
+  margin-right: 10px
+  margin-top: 6px
+
+.icono-img::before 
+  content: ''
+  position: absolute
+  background-image: url('../assets/curso/temas/bg/icon1.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  width: 15px
+  height: 14px
+  left: -3px
+  top: 50%
+  transform: translateY(-50%)
