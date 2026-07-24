@@ -245,8 +245,8 @@
       p.mt-4 A continuación, se presentan dos ejemplos que aplican la estructura if simple en situaciones frecuentes de la práctica profesional: el control de acceso por edad y la aplicación de descuentos por compra:
 
       TabsC.color-acento-botones
-        .py-3.py-md-4(titulo="Ejemplo 1")
-          .row
+        .py-3.py-md-4.bg-3(titulo="Ejemplo 1")
+          .row.p-4
             .col-md-4
               figure
                 img(src='@/assets/curso/temas/t1/20.png')
@@ -267,8 +267,8 @@
               p En este ejemplo, el mensaje 'Puede ingresar al sistema' se imprime únicamente cuando la condición edad >= 18 es verdadera, pues se encuentra dentro del bloque indentado. En cambio, el mensaje 'Gracias por su visita' se imprime siempre, ya que está fuera de dicho bloque y no depende de la condición. Este comportamiento ilustra cómo la indentación delimita con precisión el alcance de la estructura condicional.      
             
         
-        .py-3.py-md-4(titulo="Ejemplo 2")
-          .row
+        .py-3.py-md-4.bg-3(titulo="Ejemplo 2")
+          .row.p-4
             .col-md-4.mb-4.mb-md-0
               figure
                 img(src='@/assets/curso/temas/t1/21.png')
@@ -608,7 +608,7 @@
 
       .bloque-texto-g.bg-2.p-3.p-sm-4.p-md-5.mt-4
         .bloque-texto-g__img(
-          :style="{'background-image': `url(${require_src('@/assets/curso/temas/t1/36.png')})`}"
+          :style="{'background-image': `url(${require_src('@/assets/curso/temas/t1/362.png')})`}"
         )
         .bloque-texto-g__texto.p-4
           p.mb-0 Una estructura condicional puede contener otras estructuras condicionales en su interior. A esto se le conoce como anidamiento. Es útil cuando la decisión a tomar depende de varias condiciones relacionadas que se evalúan en niveles. Al anidar, es muy importante respetar los niveles de indentación para que Python identifique correctamente a qué bloque pertenece cada instrucción.
@@ -618,8 +618,8 @@
 
 
       TabsC.color-acento-botones
-        .py-3.py-md-4(titulo="Verificación del estado académico mediante condiciones anidadas")
-          .row
+        .py-3.py-md-4.bg-3(titulo="Verificación del estado académico mediante condiciones anidadas")
+          .row.p-4
             .col-md-4
               figure
                 img(src='@/assets/curso/temas/t1/37.png')
@@ -642,8 +642,8 @@
               p El código verifica primero si la nota es igual o superior a 3,0. Si se cumple esta condición, revisa si la asistencia alcanza el 80 %; de lo contrario, informa si la reprobación fue por nota o por inasistencia. 
             
         
-        .py-3.py-md-4(titulo="Ejemplo 2")
-          .row
+        .py-3.py-md-4.bg-3(titulo="Ejemplo 2")
+          .row.p-4
             .col-md-4.mb-4.mb-md-0
               figure
                 img(src='@/assets/curso/temas/t1/38.png')
@@ -855,50 +855,50 @@
       p Tras revisar cada estructura condicional por separado, conviene contrastarlas en conjunto para apreciar cuándo emplear cada una. La tabla comparativa las reúne indicando su sintaxis y su uso típico, lo que facilita elegir la estructura más adecuada según el tipo de decisión que deba tomar el programa.
 
       .row.justify-content-center.mt-4
-      .col-lg-12
-        .titulo-sexto.color-acento-contenido.mb-3.mt-4
-          h5 Tabla 1.
-          span Tipos de estructuras condicionales en Python
+        .col-lg-12
+          .titulo-sexto.color-acento-contenido.mb-3.mt-4
+            h5 Tabla 1.
+            span Tipos de estructuras condicionales en Python
 
-        .tabla-a.color-acento-contenido 
-          table
-            thead(style="background-color: #FE9841")
-              tr
-                th(style="width: 30%") Tipo
-                th Sintaxis
-                th Uso típico
+          .tabla-a.color-acento-contenido 
+            table
+              thead(style="background-color: #FE9841")
+                tr
+                  th(style="width: 30%") Tipo
+                  th Sintaxis
+                  th Uso típico
 
-            tbody
-              tr(style="background-color: #F6F9F4")
-                td if simple
-                td if condición:
-                td Ejecutar un bloque solo cuando la condición es verdadera.
+              tbody
+                tr(style="background-color: #F6F9F4")
+                  td if simple
+                  td if condición:
+                  td Ejecutar un bloque solo cuando la condición es verdadera.
 
-              tr
-                td if-else
-                td if condición: / else:
-                td Elegir entre dos caminos posibles.
+                tr
+                  td if-else
+                  td if condición: / else:
+                  td Elegir entre dos caminos posibles.
 
 
-              tr(style="background-color: #F6F9F4")
-                td if-elif-else
-                td if / elif / else:
-                td Evaluar múltiples condiciones mutuamente excluyentes.
+                tr(style="background-color: #F6F9F4")
+                  td if-elif-else
+                  td if / elif / else:
+                  td Evaluar múltiples condiciones mutuamente excluyentes.
 
-              tr
-                td Anidada
-                td if dentro de if
-                td Decisiones por niveles o combinaciones específicas.
+                tr
+                  td Anidada
+                  td if dentro de if
+                  td Decisiones por niveles o combinaciones específicas.
 
-              tr(style="background-color: #F6F9F4")
-                td Ternaria
-                td valor1 if cond else valor2
-                td Asignar un valor según una condición en una sola línea.
+                tr(style="background-color: #F6F9F4")
+                  td Ternaria
+                  td valor1 if cond else valor2
+                  td Asignar un valor según una condición en una sola línea.
 
-              tr
-                td match-case
-                td match valor: case patrón:
-                td Comparar un valor contra varios patrones (Python 3.10+).
+                tr
+                  td match-case
+                  td match valor: case patrón:
+                  td Comparar un valor contra varios patrones (Python 3.10+).
 
 
       .row.justify-content-center.mt-4
