@@ -25,7 +25,7 @@
             .row.align-items-center
               .col-lg-12
                 .cajon.color2.p-4
-                  p Dominar estas funciones permite construir bucles precisos, recorrer colecciones con eficiencia y manipular índices de forma adecuada. Además, facilita la generación de datos de prueba, la implementación de algoritmos matemáticos y el procesamiento ordenado de información. En el desarrollo de software, su uso es frecuente para controlar recorridos y organizar datos.
+                  p Dominar estas funciones permite construir bucles precisos, recorrer colecciones con eficiencia y manipular índices de forma adecuada. Además, facilita la generación de datos de prueba, la implementación de algoritmos matemáticos y el procesamiento ordenado de información. En el desarrollo de <em>software</em>, su uso es frecuente para controlar recorridos y organizar datos.
 
 
     p.mt-4 Las funciones de recorrido facilitan la generación y organización de secuencias. La primera de ellas es range(), empleada para producir series de números enteros.
@@ -114,7 +114,7 @@
                   p.mb-0 >>> list(range(5, 0, -1))
                   p [5, 4, 3, 2, 1]
 
-                  p El ciclo while evalúa una condición antes de cada repetición y ejecuta el bloque indentado mientras sea verdadera. Cuando la condición es falsa, el ciclo termina y el programa continúa.
+                  p El código genera secuencias con diferentes valores de inicio, límite e incremento, incluido el recorrido descendente. En todos los casos, el valor final se excluye de la secuencia.
 
                 .col-lg-6
                   figure
@@ -439,7 +439,7 @@
 
               p.mb-0 El código relaciona cada nombre con la edad que ocupa la misma posición en la segunda lista. Luego, recorre las parejas y muestra la información de cada persona.
     
-          .row(numero="2" titulo="Características del registro")
+          .row(numero="2" titulo="Código. Uso de zip() con tres listas")
             .col-md-12.mb-4.mb-md-0
               p.mb-0 # Combinar tres listas
               p.mb-0 nombres = ['Ana', 'Luis', 'Pedro']
@@ -451,7 +451,7 @@
 
               p.mb-0 El código agrupa el nombre, la ciudad y la profesión ubicados en la misma posición de las tres listas. Después, recorre cada grupo y presenta la información asociada.
     
-          .row(numero="3" titulo="Finalidad del registro")
+          .row(numero="3" titulo="Código. Comportamiento de zip() con longitudes diferentes")
             .col-md-12.mb-4.mb-md-0
               p.mb-0 # zip() con secuencias de diferente longitud
               p.mb-0 lista_a = [1, 2, 3, 4, 5]
@@ -562,7 +562,6 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      this.$aosRefresh()
       Prism.highlightAllUnder(this.$el)
     })
   },

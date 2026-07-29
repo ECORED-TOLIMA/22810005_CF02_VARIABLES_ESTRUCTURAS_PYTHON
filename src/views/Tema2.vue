@@ -125,7 +125,7 @@
       .col-lg-10
         .row.align-items-center
           .col-lg-12
-            .cajon.color2.p-4
+            .cajon.color1.p-4
               .row.align-items-start.mt-4
                 .col-lg-2.mb-lg-0.mb-4
                   figure(data-aos="fade-down")
@@ -845,7 +845,7 @@
           img(src='@/assets/curso/temas/t2/25.png', alt='', style="width: 390px").m-auto
       .col-lg-6
         .titulo-sexto.color-acento-contenido.mb-3.mt-4
-          h5.bg-11.p-1 Código. Asignación múltiple e intercambio de valores en Python
+          h5.bg-11.p-1 Código. Diferencia entre == (valor) e is (identidad)
     
         .tarjeta-codigo
             pre.language-python(language="python").mb-5
@@ -1103,7 +1103,6 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      this.$aosRefresh()
       Prism.highlightAllUnder(this.$el)
     })
   },

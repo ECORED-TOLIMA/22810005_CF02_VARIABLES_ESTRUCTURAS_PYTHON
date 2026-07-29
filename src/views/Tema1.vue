@@ -209,7 +209,7 @@
           figure
             img(src='@/assets/curso/temas/t1/18.png', alt='', style="width: 390px").m-auto
         .col-lg-6
-          p Esta clase de decisión aparece de forma constante en el desarrollo de software: validar que un campo no esté vacío, conceder un permiso solo si se cumple un requisito o mostrar una alerta cuando un valor supera cierto límite son situaciones cotidianas que se resuelven con un if simple. Su sencillez lo convierte en la primera herramienta de control que utiliza cualquier programador. Para emplearla con seguridad, conviene distinguir dos elementos:
+          p Esta clase de decisión aparece de forma constante en el desarrollo de <em>software</em>: validar que un campo no esté vacío, conceder un permiso solo si se cumple un requisito o mostrar una alerta cuando un valor supera cierto límite son situaciones cotidianas que se resuelven con un if simple. Su sencillez lo convierte en la primera herramienta de control que utiliza cualquier programador. Para emplearla con seguridad, conviene distinguir dos elementos:
 
           .row
             .col-sm-6.col-lg-6.mb-4.mb-lg-0
@@ -312,7 +312,7 @@
 
       p.mt-4 La estructura if-else permite ejecutar un bloque de instrucciones cuando la condición es verdadera y otro bloque diferente cuando es falsa. De esta manera, el programa siempre ejecuta uno de los dos caminos posibles, garantizando una respuesta en cualquier situación. Se utiliza cuando las dos alternativas son mutuamente excluyentes.
 
-      p La estructura if-else resulta especialmente útil en decisiones que solo admiten dos caminos posibles. Algunos ejemplos frecuentes en el desarrollo de software son:
+      p La estructura if-else resulta especialmente útil en decisiones que solo admiten dos caminos posibles. Algunos ejemplos frecuentes en el desarrollo de <em>software</em> son:
 
       .row.mb-4
         .col-md-6.col-lg.mb-5.mb-lg-0
@@ -642,7 +642,7 @@
               p El código verifica primero si la nota es igual o superior a 3,0. Si se cumple esta condición, revisa si la asistencia alcanza el 80 %; de lo contrario, informa si la reprobación fue por nota o por inasistencia. 
             
         
-        .py-3.py-md-4.bg-3(titulo="Ejemplo 2")
+        .py-3.py-md-4.bg-3(titulo="Validación del inicio de sesión mediante condiciones anidadas")
           .row.p-4
             .col-md-4.mb-4.mb-md-0
               figure
@@ -986,7 +986,6 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      this.$aosRefresh()
       Prism.highlightAllUnder(this.$el)
     })
   },

@@ -63,7 +63,7 @@
 
     separador
     #t_3_1.titulo-segundo.color-acento-contenido
-      h2 3.1. Operador ternario
+      h2 3.1. Ciclo while
 
     .row.align-items-center.justify-content-center
       .col-lg-12
@@ -101,7 +101,7 @@
                   figure
                     img(src='@/assets/curso/temas/t3/8.png', alt='', style="width: 480px").m-auto
       
-            div(titulo="Código. Estructura condicional if")
+            div(titulo="Código. Programa: contar del 1 al 5 con while")
               .row.align-items-center
                 .col-lg-6
                   p.mb-0 # Programa: contar del 1 al 5
@@ -568,7 +568,6 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      this.$aosRefresh()
       Prism.highlightAllUnder(this.$el)
     })
   },
